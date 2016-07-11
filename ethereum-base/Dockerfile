@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
 MAINTAINER Steven Bakhtiari
-
-WORKDIR /opt/eth
+RUN mkdir /opt/eth
+WORKDIR /opt/eth/
 
 COPY ./genesis-block.json .
 
